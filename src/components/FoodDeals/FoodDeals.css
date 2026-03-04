@@ -1,0 +1,95 @@
+.deal-container {
+    display: flex;
+    width: 50%;
+    margin-top: 1em;
+    justify-content: center;
+    height: 22em;
+}
+
+.deal-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-image: url("/images/iteration-2-images/cta/kart-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 4rem 1rem;
+    margin-right: 10px;
+}
+
+.other-deals {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Barlow", sans-serif;
+}
+
+.deal-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
+    background-image: url("/images/iteration-2-images/cta/kart-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+}
+
+.deal-3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
+    background-image: url("/images/iteration-2-images/cta/kart-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+}
+
+.deal-button {
+    border-radius: 50px;
+    padding: 1em 1.5em;
+    width: 30%;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: #CE2829;
+    background-color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .deal-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .deal-1,
+    .deal-2,
+    .deal-3 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+        padding: 2rem 1rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .deal-button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

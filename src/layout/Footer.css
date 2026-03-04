@@ -1,0 +1,82 @@
+.container-footer {
+    background-color: #292929;
+    padding-top: 2rem;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.footer-contact h2 {
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 1.5rem;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-contact p img {
+    padding-right: 0.2rem;
+}
+
+.footer-contact p {
+    display: flex;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-menu p {
+    display: flex;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.container-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.bottom-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-part {
+    padding: 2rem 16rem 0rem 16rem;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer h4 {
+    color: white;
+    font-size: 1.5rem;
+}

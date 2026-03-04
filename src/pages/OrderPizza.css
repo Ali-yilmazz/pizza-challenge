@@ -1,0 +1,311 @@
+/* ===== OrderPizza (clean + responsive) ===== */
+
+.order-page {
+    width: 100%;
+}
+
+/* Sayfa container */
+.order-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 28px 18px;
+    /* banner gidince biraz nefes */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Açıklama kartı */
+.order-card {
+    background: #FAF7F2;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.order-title {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.menu-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: 800;
+    font-size: 28px;
+    color: #1f1f1f;
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+    color: #5F5F5F;
+}
+
+.order-desc {
+    margin: 0;
+    color: #5F5F5F;
+    line-height: 1.5;
+}
+
+/* Form genel */
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.field-title {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: #1f1f1f;
+}
+
+.req {
+    color: #CE2829;
+    font-weight: 900;
+}
+
+.order-error {
+    margin: 0 0 8px 0;
+    color: #CE2829;
+    font-size: 13px;
+}
+
+/* input */
+.text-input {
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    padding: 10px 12px;
+}
+
+/* select */
+.dough-select {
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    padding: 10px 12px;
+    background: #fff;
+}
+
+.hint {
+    font-size: 12px;
+    color: #6b6b6b;
+    margin: 0 0 10px 0;
+}
+
+/* Boyut grid */
+.size-grid {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.size-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    background: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.size-item input[type="radio"] {
+    width: 16px;
+    height: 16px;
+}
+
+.size-item--selected {
+    border-color: #fdc913;
+    box-shadow: 0 0 0 3px rgba(253, 201, 19, 0.18);
+}
+
+/* Ek malzemeler */
+.toppings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(170px, 1fr));
+    gap: 14px 18px;
+}
+
+.topping-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 14px;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    background: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.topping-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.topping-label {
+    font-size: 14px;
+    color: #1f1f1f;
+}
+
+.topping-item--selected {
+    border-color: #fdc913;
+    box-shadow: 0 0 0 3px rgba(253, 201, 19, 0.18);
+}
+
+.topping-item--disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.topping-item--disabled input[type="checkbox"] {
+    cursor: not-allowed;
+}
+
+/* Not */
+.note {
+    width: 100%;
+    min-height: 90px;
+    resize: none;
+
+    border: 0;
+    border-radius: 12px;
+    padding: 12px;
+    background: #FAF7F2;
+}
+
+/* Alt alan */
+.bottom-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.counter {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px !important;
+    border: 0 !important;
+    background: #FDC913 !important;
+    color: #1f1f1f !important;
+    font-weight: 800;
+}
+
+.counter-value {
+    min-width: 24px;
+    text-align: center;
+    font-weight: 800;
+    color: #1f1f1f;
+}
+
+.summary {
+    flex: 1;
+    max-width: 360px;
+
+    padding: 14px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.summary-title {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 900;
+    color: #1f1f1f;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: #5F5F5F;
+}
+
+.summary-row.total {
+    margin-top: 6px;
+    font-weight: 900;
+    color: #CE2829;
+}
+
+.money {
+    white-space: nowrap;
+    /* ₺ alt satıra düşmesin */
+}
+
+.submit-btn {
+    width: 100%;
+    height: 44px;
+    border: 0 !important;
+    border-radius: 12px !important;
+    background: #FDC913 !important;
+    color: #1f1f1f !important;
+    font-weight: 900 !important;
+    margin-top: 10px;
+}
+
+.submit-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed !important;
+}
+
+/* ===== Responsive ===== */
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+@media (max-width: 900px) {
+    .toppings-grid {
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+    }
+
+    .summary {
+        max-width: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .counter {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .toppings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+}

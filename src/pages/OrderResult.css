@@ -1,0 +1,104 @@
+/* ===== OrderResult / Success (clean) ===== */
+
+.result-page {
+    min-height: 100vh;
+    background: #CE2829;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 16px;
+    text-align: center;
+}
+
+.brand {
+    margin: 0 0 28px 0;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.result-title {
+    margin: 0 0 18px 0;
+    font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.result-sub {
+    width: min(520px, 92vw);
+    margin-bottom: 18px;
+}
+
+.sub-line {
+    margin: 6px 0;
+    font-size: 15px;
+    opacity: 0.95;
+    line-height: 1.4;
+}
+
+/* Kutu */
+.result-box {
+    width: min(420px, 92vw);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 14px;
+    padding: 18px;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.box-title {
+    margin: 0 0 14px 0;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+/* Satırlar */
+.box-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.box-row:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.label {
+    font-weight: 800;
+}
+
+.money {
+    font-weight: 900;
+    white-space: nowrap;
+    /* ₺ alt satıra düşmesin */
+}
+
+.box-row.total {
+    margin-top: 4px;
+}
+
+.box-row.total .label,
+.box-row.total .money {
+    font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+    .brand {
+        font-size: 28px;
+    }
+
+    .result-title {
+        font-size: 38px;
+    }
+
+    .sub-line {
+        font-size: 14px;
+    }
+}
